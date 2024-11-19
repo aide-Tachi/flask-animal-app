@@ -37,7 +37,7 @@ def upload_file():
             filepath = os.path.join(UPLOAD_FOLDER, filename)
 
             #受け取った画像を読み込み、np形式に変換
-            img = image.load_img(filepath, grayscale=True, target_size=(image_size,image_size))
+            img = image.load_img(filepath, grayscale=False, target_size=(image_size,image_size))
             img = image.img_to_array(img)
             data = np.array([img])
             #変換したデータをモデルに渡して予測する
