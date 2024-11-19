@@ -28,7 +28,7 @@ requests
 scipy
 six
 tensorboard
-tensorflow-cpu==2.17.0
+tensorflow-cpu==2.13.0
 termcolor
 urllib3
 Werkzeug
