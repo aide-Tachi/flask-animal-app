@@ -18,7 +18,7 @@ app = Flask(__name__)
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-model = load_model('./model.h5', compile=False)#学習済みモデルをロード
+model = load_model('./model.keras', compile=False)#学習済みモデルをロード
 
 #ユーザー画面の表示とアップロードファイルのチェック
 @app.route('/', methods=['GET', 'POST'])
