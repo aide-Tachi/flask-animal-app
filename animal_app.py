@@ -8,7 +8,7 @@ import numpy as np
 
 
 classes = ["snake","crocodile","lizard"]
-image_size = 28
+image_size = 200
 
 UPLOAD_FOLDER = "uploads"
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
